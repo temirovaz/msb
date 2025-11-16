@@ -1,0 +1,50 @@
+body {font-family: Arial, sans-serif;}
+.leasing-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw; height: 100vh;
+  z-index: 9999;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center; justify-content:center;
+}
+.leasing-modal {
+  background: white;
+  border-radius: 16px;
+  padding: 0;
+  min-width: 600px; max-width: 800px;
+  min-height: 220px;
+  font-size: 18px;
+  position: relative;
+  box-shadow: 0 10px 40px #0005;
+  overflow: hidden;
+  display: flex; flex-direction: column; align-items: stretch;
+}
+.leasing-modal__header {
+  padding: 18px 32px 12px 32px;
+  border-bottom: 1px solid #f2f2f2;
+  display: flex; align-items: center; justify-content: space-between;
+  font-weight: bold;
+  background: #f8fafc;
+}
+.leasing-modal__title {
+  font-size: 22px; display: flex; align-items: center;
+}
+.leasing-modal__content {
+  padding: 32px 40px 24px 40px;
+}
+.leasing-modal-success {
+  color: #10b947;
+  text-align: center;
+}
+.leasing-modal-reject {
+  color: #df2e35;
+  text-align: center;
+}
+.leasing-modal__close-x {
+  cursor: pointer;
+  font-size: 27px;
+  line-height: 1;
+  color: #999;margin-left:18px;
+  font-weight: 400;
+}
